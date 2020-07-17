@@ -1,0 +1,13 @@
+{
+  "name": "mail-box-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.8.5",
+    "browser-sync": "^2.26.9",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "tailwindcss": "^1.5.1"
+  }
+}
