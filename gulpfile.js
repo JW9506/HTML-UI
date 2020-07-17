@@ -23,6 +23,7 @@ function sync() {
     server: {
       baseDir: "./build",
     },
+    notify: false,
   })
   gulp.watch("src/index.html", html)
 }
