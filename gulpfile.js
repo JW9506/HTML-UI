@@ -1,16 +1,24 @@
 const gulp = require("gulp")
 const browserSync = require("browser-sync").create()
 const postcss = require("gulp-postcss")
+const purgecss = require("gulp-purgecss")
 
 function copy() {
   return gulp.src("src/favicon.ico").pipe(gulp.dest("./build"))
 }
 
 function css() {
-  return gulp
+  let src = gulp
     .src("src/styles.css")
     .pipe(postcss([require("tailwindcss"), require("autoprefixer")]))
-    .pipe(gulp.dest("./build"))
+  if (process.env === "production") {
+    src = src.pipe(
+      purgecss({
+        content: ["src/**/*.html"],
+      })
+    )
+  }
+  return src.pipe(gulp.dest("./build"))
 }
 
 function html() {
@@ -26,8 +34,11 @@ function sync() {
     notify: false,
   })
   gulp.watch("src/index.html", html)
+  gulp.watch("./tailwind.config.js", gulp.series(css, html))
 }
 
-const build = gulp.series(copy, css, html, sync)
+const build = gulp.series(
+  ...[copy, css, html, process.env !== "production" && sync].filter(Boolean)
+)
 
 exports.default = build
