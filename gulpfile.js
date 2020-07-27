@@ -34,7 +34,10 @@ function sync() {
     notify: false,
   })
   gulp.watch("src/index.html", html)
-  gulp.watch("./tailwind.config.js", gulp.series(css, html))
+  gulp.watch(
+    ["./tailwind.config.js", "./src/styles.css"],
+    gulp.series(css, html)
+  )
 }
 
 const build = gulp.series(
