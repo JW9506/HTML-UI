@@ -1,13 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Netlify</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div>hello</div>
+
+<body class="font-sans leading-tight bg-gray-400">
+  <header class="bg-black text-gray-500 antialiased">
+    <div class="container mx-auto px-8 pb-24">
+      <div class="flex justify-between items-center border-b-2 border-gray-800">
+        <div class="flex items-center py-2">
+          <div class="flex-none h-12 w-12 bg-indigo-700 rounded-full cursor-pointer"></div>
+          <div class="ml-2 flex items-center text-xl font-semibold flex-wrap">
+            <a href="#" class="flex items-center py-3 hover:text-gray-200">
+              Foobar
+            </a>
+            <svg class="text-blue-900 h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20">
+              <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+            </svg>
+            <a href="#" class="hover:text-gray-200">
+              elated-stonebraker-70896a
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="h-10 w-10 bg-gray-300 border-2 border-gray-500 rounded-full"></div>
+        </div>
+      </div>
+      <nav class="flex mt-2 flex-wrap">
+        <a href="#" class="hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Overview</a>
+        <a href="#" class="hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Deploys</a>
+        <a href="#" class="hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Functions</a>
+        <a href="#" class="hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Identity</a>
+        <a href="#" class="hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Forms</a>
+        <a href="#" class="hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Split Testing</a>
+        <a href="#" class="text-gray-200 mr-2 px-2 py-2">Settings</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container mx-auto px-6 -mt-20">
+    <div class="bg-white rounded-lg shadow p-6 max-w-2xl flex justify-between">
+      <div class="text-gray-600">
+        <h1 class="text-gray-900 mb-3 text-xl font-semibold">elated-stonebraker-70896a</h1>
+        <p class="mb-3">
+          <a href="#">tailwindcss.com</a>
+        </p>
+        <p class="mb-3">Deploys from GitHub. Owned by foobar</p>
+        <p>Last update on Dec 31 (2 days ago)</p>
+      </div>
+      <div class="w-56 h-24 bg-gray-700 hidden sm:block"></div>
+    </div>
+    <div class="flex flex-wrap -mx-6 mt-5">
+      <div class="w-full sm:w-64 flex-none px-6 sticky">
+        <div class="bg-white border rounded-lg">
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-teal-900 text-md block px-4 py-3 font-semibold">General</a>
+          </div>
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-sm block pl-6 pr-4 py-3 font-semibold">Site
+              details</a>
+          </div>
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-gray-600 text-sm block pl-6 pr-4 py-3">Site
+              administrators</a>
+          </div>
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-gray-600 text-sm block pl-6 pr-4 py-3">Danger
+              Zone</a>
+          </div>
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-gray-600 text-md block px-4 py-3">Build &
+              Deploy</a>
+          </div>
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-gray-600 text-md block px-4 py-3">Domain
+              management</a>
+          </div>
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-gray-600 text-md block px-4 py-3">Functions</a>
+          </div>
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-gray-600 text-md block px-4 py-3">Identity</a>
+          </div>
+          <div class="border-b border-gray-400">
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-gray-600 text-md block px-4 py-3">Forms</a>
+          </div>
+          <div>
+            <a href="#"
+              class="border-l-2 hover:bg-gray-200 border-transparent text-gray-600 text-md block px-4 py-3">Access
+              control</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 px-6">
+        <div class="my-6 sm:mt-0">
+          <h2 class="text-xl font-semibold mb-2">Site details</h2>
+          <p class="text-gray-600">General information about your site</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 mb-5">
+          <h3 class="text-2xl font-semibold mb-2 pb-3 border-b-2 border-gray-400">Site information</h3>
+          <table class="w-full -mx-6">
+            <tr>
+              <td class="px-6 py-2 w-1/4">Site name:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold"><a href="#">elated-stonebraker-70896a</a></td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Owner</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                foobar
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Last update:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                Dec 31 at 4:00 pm
+              </td>
+            </tr>
+          </table>
+          <div>
+            <button class="border shadow px-4 py-2 font-semibold focus:outline-none">Change site name</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 mb-5">
+          <h3 class="text-2xl font-semibold mb-2 pb-3 border-b-2 border-gray-400">Site information</h3>
+          <table class="w-full -mx-6">
+            <tr>
+              <td class="px-6 py-2 w-1/4">Site name:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold"><a href="#">elated-stonebraker-70896a</a></td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Owner</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                foobar
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Last update:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                Dec 31 at 4:00 pm
+              </td>
+            </tr>
+          </table>
+          <div>
+            <button class="border shadow px-4 py-2 font-semibold focus:outline-none">Change site name</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 mb-5">
+          <h3 class="text-2xl font-semibold mb-2 pb-3 border-b-2 border-gray-400">Site information</h3>
+          <table class="w-full -mx-6">
+            <tr>
+              <td class="px-6 py-2 w-1/4">Site name:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold"><a href="#">elated-stonebraker-70896a</a></td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Owner</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                foobar
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Last update:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                Dec 31 at 4:00 pm
+              </td>
+            </tr>
+          </table>
+          <div>
+            <button class="border shadow px-4 py-2 font-semibold focus:outline-none">Change site name</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 mb-5">
+          <h3 class="text-2xl font-semibold mb-2 pb-3 border-b-2 border-gray-400">Site information</h3>
+          <table class="w-full -mx-6">
+            <tr>
+              <td class="px-6 py-2 w-1/4">Site name:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold"><a href="#">elated-stonebraker-70896a</a></td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Owner</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                foobar
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Last update:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                Dec 31 at 4:00 pm
+              </td>
+            </tr>
+          </table>
+          <div>
+            <button class="border shadow px-4 py-2 font-semibold focus:outline-none">Change site name</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 mb-5">
+          <h3 class="text-2xl font-semibold mb-2 pb-3 border-b-2 border-gray-400">Site information</h3>
+          <table class="w-full -mx-6">
+            <tr>
+              <td class="px-6 py-2 w-1/4">Site name:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold"><a href="#">elated-stonebraker-70896a</a></td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Owner</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                foobar
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-2 w-1/4">Last update:</td>
+              <td class="px-6 py-2 w-3/4 text-black font-semibold">
+                Dec 31 at 4:00 pm
+              </td>
+            </tr>
+          </table>
+          <div>
+            <button class="border shadow px-4 py-2 font-semibold focus:outline-none">Change site name</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black">
+    <div class="container mx-auto px-6 text-center py-4">
+      <div>
+        <a href="#" class="inline-block hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Overview</a>
+        <a href="#" class="inline-block hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Deploys</a>
+        <a href="#" class="inline-block hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Functions</a>
+        <a href="#" class="inline-block hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Identity</a>
+        <a href="#" class="inline-block hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Forms</a>
+        <a href="#" class="inline-block hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Split Testing</a>
+        <a href="#" class="inline-block hover:text-gray-200 text-gray-600 mr-2 px-2 py-2">Settings</a>
+      </div>
+      <div>
+        <p class="text-gray-600">&copy; 2020 Netlify</p>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
