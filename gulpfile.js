@@ -2,6 +2,11 @@ const gulp = require('gulp')
 const browserSync = require('browser-sync').create()
 const postcss = require('gulp-postcss')
 const purgecss = require('gulp-purgecss')
+const del = require('del')
+
+function clean() {
+  return del(['./build'])
+}
 
 function copy() {
   return gulp.src('src/favicon.ico').pipe(gulp.dest('./build'))
@@ -18,6 +23,8 @@ function css() {
       })
     )
   }
+  gulp.src('src/css/font-awesome.min.css').pipe(gulp.dest('./build/css'))
+  gulp.src('src/fonts/*').pipe(gulp.dest('./build/fonts'))
   return src.pipe(gulp.dest('./build'))
 }
 
@@ -34,14 +41,13 @@ function sync() {
     notify: false,
   })
   gulp.watch('src/index.html', html)
-  gulp.watch(
-    ['./tailwind.config.js', './src/styles.css'],
-    gulp.series(css, html)
-  )
+  gulp.watch(['./tailwind.config.js', './src/*.css'], gulp.series(css, html))
 }
 
 const build = gulp.series(
-  ...[copy, css, html, process.env !== 'production' && sync].filter(Boolean)
+  ...[clean, copy, css, html, process.env !== 'production' && sync].filter(
+    Boolean
+  )
 )
 
 exports.default = build
